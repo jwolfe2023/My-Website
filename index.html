@@ -45,6 +45,38 @@
          <h2><a id="Wolves"> Wolves </a></h2>
          <p> The 7 common wolves found are the Gray Wolf, Red Wolf, Indian Wolf, Himalayan Wolf, Ethiopian Wolf, Eastern Wolf, and Artic Wolf. But I will talk about them at another time. these 7 wolves are commonly found in found in North America, Europe, Asia, and North Africa. They tend to live in Forests although the Red Wolf like to live in swamps, costal prairies and forests. Now wolves are actually helping the ecosystem. They help kill off deer and elk to keep their population in check, and sometimes can help feed other animals like bears.</p>
           </div>
+
+          <script>
+
+          var element = document.documentElement;
+
+          if(element.scrollHeight > element.clientHeight) {
+
+            element.style.overflow = 'scrollbar';
+          } else {
+
+            element.style.overflow = 'hidden';
+          }
+
+          var mybutton = document.getElementById("myBtn");
+
+          window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+
+          </script>
+          
         </ul>
       </nav>
     </aside>
