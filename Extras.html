@@ -45,6 +45,35 @@
          <p> How long have wolves been around for: 750,000 | Wolves Keep the YellowStone in place | 4-6 pups are born in the spring | Wolves can live up to 16 years | There is actually a unkown canine gene that is wondering around a wolf's body</p>
 
           </div>
+                     <script>
+         var element = document.documentElement;
+
+if(element.scrollHeight > element.clientHeight) {
+
+  element.style.overflow = 'scrollbar';
+} else {
+
+  element.style.overflow = 'hidden';
+}
+
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+} 
+          
+          </script>
 
 
         </ul>
